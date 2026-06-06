@@ -1,0 +1,328 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="伊東駿一のポートフォリオ。計算創薬、プロテオミクス、機械学習、Web開発の研究・開発経験を掲載しています。"
+    >
+    <meta name="theme-color" content="#f6f8f3">
+    <title>Shunichi Ito | Portfolio</title>
+    <link rel="icon" href="assets/hero-research.png">
+    <link rel="preload" href="assets/hero-research.png" as="image">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="ページ上部へ">Shunichi Ito</a>
+      <nav class="nav" aria-label="主要ナビゲーション">
+        <a href="#publications">Publications</a>
+        <a href="#projects">Projects</a>
+        <a href="#experience">Experience</a>
+        <a href="#skills">Skills</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__media" aria-hidden="true"></div>
+        <div class="hero__overlay"></div>
+        <div class="hero__content">
+          <p class="eyebrow">Computational biology / Machine learning / Web development</p>
+          <h1 id="hero-title">伊東 駿一</h1>
+          <p class="hero__lead">
+            京都大学大学院薬学研究科 修士課程在学中。 <br>
+            生命科学 x データサイエンスで創薬プロセスを革新したいです。
+          </p>
+          <div class="hero__actions" aria-label="関連リンク">
+            <a class="button button--primary" href="#projects">Projects</a>
+          </div>
+          <ul class="social-links" aria-label="ソーシャルリンク">
+            <li>
+              <a class="social-links__item" href="https://x.com/Katan1105" target="_blank" rel="noopener noreferrer" aria-label="X">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24h-6.656l-5.214-6.817-5.966 6.817H1.683l7.73-8.835L1.254 2.25H8.08l4.713 6.231 5.45-6.231Zm-1.161 17.52h1.833L7.084 4.126H5.117L17.083 19.77Z"/>
+                </svg>
+                <span>X</span>
+              </a>
+            </li>
+            <li>
+              <a class="social-links__item" href="https://www.linkedin.com/in/shunichi-ito-0a51a1213" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.34V9h3.42v1.56h.05c.48-.9 1.64-1.85 3.38-1.85 3.61 0 4.28 2.38 4.28 5.47v6.27ZM5.34 7.43a2.07 2.07 0 1 1 0-4.14 2.07 2.07 0 0 1 0 4.14ZM7.12 20.45H3.55V9h3.57v11.45ZM22.22 0H1.77C.8 0 0 .78 0 1.74v20.52C0 23.22.8 24 1.77 24h20.45c.98 0 1.78-.78 1.78-1.74V1.74C24 .78 23.2 0 22.22 0Z"/>
+                </svg>
+                <span>LinkedIn</span>
+              </a>
+            </li>
+            <li>
+              <a class="social-links__item" href="https://github.com/Shunichi1100921" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M12 .5C5.37.5 0 5.87 0 12.5c0 5.3 3.44 9.8 8.21 11.39.6.11.82-.26.82-.58 0-.29-.01-1.04-.02-2.05-3.34.73-4.04-1.61-4.04-1.61-.55-1.39-1.34-1.76-1.34-1.76-1.09-.75.08-.73.08-.73 1.21.09 1.84 1.24 1.84 1.24 1.07 1.84 2.81 1.31 3.5 1 .11-.78.42-1.31.76-1.61-2.67-.3-5.47-1.34-5.47-5.94 0-1.31.47-2.38 1.24-3.22-.13-.31-.54-1.53.12-3.18 0 0 1.01-.32 3.3 1.23a11.5 11.5 0 0 1 6.01 0c2.29-1.55 3.3-1.23 3.3-1.23.66 1.65.25 2.87.12 3.18.77.84 1.24 1.91 1.24 3.22 0 4.61-2.81 5.63-5.49 5.93.43.37.81 1.1.81 2.22 0 1.6-.01 2.89-.01 3.29 0 .32.21.7.83.58A12.01 12.01 0 0 0 24 12.5C24 5.87 18.63.5 12 .5Z"/>
+                </svg>
+                <span>GitHub</span>
+              </a>
+            </li>
+            <li>
+              <a class="social-links__item" href="https://zenn.dev/shunichi1100921" target="_blank" rel="noopener noreferrer" aria-label="Zenn">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M.264 23.771h4.984c.264 0 .498-.147.645-.352L16.084 7.181c.176-.264-.029-.616-.351-.616h-4.838c-.264 0-.527.147-.674.352L.029 23.185c-.176.264.029.586.235.586ZM17.114 23.361l6.798-10.875c.176-.264-.029-.616-.352-.616h-4.515c-.264 0-.498.147-.645.352l-6.886 10.993c-.147.235.029.557.323.557h4.838c.205 0 .381-.117.439-.264Z"/>
+                </svg>
+                <span>Zenn</span>
+              </a>
+            </li>
+            <li>
+              <a class="social-links__item" href="https://www.docswell.com/user/shunichi1100921" target="_blank" rel="noopener noreferrer" aria-label="Docswell">
+                <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="M3 3.75A1.75 1.75 0 0 1 4.75 2h10.5L21 7.75v12.5A1.75 1.75 0 0 1 19.25 22H4.75A1.75 1.75 0 0 1 3 20.25V3.75Zm11.5.25v4h4l-4-4ZM7 11.5h10v1.6H7v-1.6Zm0 3.6h10v1.6H7v-1.6Zm0-7.2h5v1.6H7V7.9Z"/>
+                </svg>
+                <span>Docswell</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="section intro" aria-label="概要">
+        <div class="section__inner intro__grid">
+          <div>
+            <p class="section-kicker">Profile</p>
+            <h2>伊東 駿一</h2>
+            <p>
+              京都大学大学院薬学研究科 薬科学専攻 修士課程。
+              京都大学大学院薬学研究科 修士課程在学中。生体分子計測学分野に所属し、統計モデルを活用したLC/MSデータの解析手法の開発に取り組んでいます。
+            </p>
+          </div>
+          <dl class="stats" aria-label="ハイライト">
+            <div>
+              <dt>Kaggle</dt>
+              <dd>Silver Medal / 20th</dd>
+            </div>
+            <div>
+              <dt>Research interest</dt>
+              <dd>Proteomics / AI for Drug Discovery</dd>
+            </div>
+            <div>
+              <dt>Stack</dt>
+              <dd>Python ★★★ / TypeScript ★ / Go ★ / Ruby on Rails ★</dd>
+            </div>
+          </dl>
+        </div>
+      </section>
+
+      <section id="publications" class="section section--tint" aria-labelledby="publications-title">
+        <div class="section__inner">
+          <div class="section-heading">
+            <p class="section-kicker">Publications</p>
+            <h2 id="publications-title">発表・成果物</h2>
+          </div>
+          <div class="publication-list">
+            <article class="pub-card">
+              <a class="pub-card__image-link" href="https://pubs.acs.org/doi/full/10.1021/acs.jcim.4c01353" target="_blank" rel="noopener noreferrer" aria-label="論文を読む: Molecular Design for Cardiac Cell Differentiation">
+                <img class="pub-card__image" src="assets/icems-cardiomyocite-hiPSC.gif" alt="Abstract figure: iPS細胞の心筋細胞分化誘導化合物の計算機的設計" loading="lazy">
+                <span class="pub-card__overlay" aria-hidden="true">論文を読む →</span>
+              </a>
+              <div class="pub-card__body">
+                <p class="pub-card__venue">Journal of Chemical Information and Modeling, 2024 &nbsp;·&nbsp; 共著</p>
+                <h3>Molecular Design for Cardiac Cell Differentiation Using a Small Data Set and Decorated Shape Features</h3>
+              </div>
+            </article>
+            <article class="pub-card">
+              <a class="pub-card__image-link" href="https://tech.preferred.jp/ja/blog/gene_network_extraction_with_llms/" target="_blank" rel="noopener noreferrer" aria-label="記事を読む: LLMによる遺伝子ネットワーク抽出">
+                <img class="pub-card__image" src="assets/pfn-gene-network.png" alt="Key visual: LLMによる遺伝子ネットワーク抽出" loading="lazy">
+                <span class="pub-card__overlay" aria-hidden="true">記事を読む →</span>
+              </a>
+              <div class="pub-card__body">
+                <p class="pub-card__venue">Preferred Networks Tech Blog, 2025 &nbsp;·&nbsp; 夏季インターン成果物</p>
+                <h3>LLMによる遺伝子ネットワーク抽出：ペアワイズ因果推論とプロンプト設計の実験報告</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="projects" class="section" aria-labelledby="projects-title">
+        <div class="section__inner">
+          <div class="section-heading">
+            <p class="section-kicker">Selected Work</p>
+            <h2 id="projects-title">主要プロジェクト</h2>
+          </div>
+
+          <div class="project-grid">
+            <article class="project-card project-card--featured">
+              <div class="project-card__meta">
+                <span>Research</span>
+                <span>2024 - Present</span>
+              </div>
+              <h3>サンプルの階層性を活かしたMixture-of-mixturesモデルによるLC/MSデータ解析</h3>
+              <p>
+                LC/MSで得られる複雑なシグナルデータを混合分布モデルとして扱い、
+                タンパク質・ペプチドの同定と定量を行う解析ツールを開発しています。
+                サンプルの階層性を活かしたMixture-of-mixturesモデルを提案し、最適輸送を目的関数とした最適化アルゴリズムを実装しました。
+              </p>
+              <div class="tag-list">
+                <span>Python</span>
+                <span>Statistical modeling</span>
+                <span>Proteomics</span>
+                <span>EM algorithm</span>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__meta">
+                <span>Internship</span>
+                <span>PFN</span>
+              </div>
+              <h3>LLMによる遺伝子ネットワーク抽出</h3>
+              <p>
+                乳がんKEGG Pathwayに関連する19遺伝子を対象に、LLMで向き付きエッジをペアワイズ推定しDAGへ統合。
+                プロンプト設計の改善により、統計的手法と比較しながらF1=0.780まで性能を向上させました。
+              </p>
+              <a class="text-link" href="https://tech.preferred.jp/ja/blog/gene_network_extraction_with_llms/">成果記事を読む</a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__meta">
+                <span>Competition</span>
+                <span>Kaggle</span>
+              </div>
+              <h3>post-HCT Survival Prediction</h3>
+              <p>
+                造血幹細胞移植後の予後予測コンペに研究室チームで参加。
+                Kaplan-Meier変換、Pairwise損失関数、Seed averaging、LightGBMの調整を担当し、銀メダルを獲得しました。
+              </p>
+              <a class="text-link" href="https://www.kaggle.com/competitions/equity-post-HCT-survival-predictions">Competition page</a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__meta">
+                <span>Research</span>
+                <span>iCeMS / KyotoU</span>
+              </div>
+              <h3>iPS細胞の心筋細胞分化誘導化合物の計算機的設計</h3>
+              <p>
+                京都大学iCeMSにてアルバイト研究員として参加。少数データから機械学習で分化誘導化合物を予測し、
+                薬学知識をもとにフラグメント分解・新規化合物生成・PDBファイル作成を担当。
+                実験によって実際に心筋細胞への分化誘導が確認され、査読付き国際誌に掲載されました。
+              </p>
+              <a class="text-link" href="https://pubs.acs.org/doi/full/10.1021/acs.jcim.4c01353">論文を読む</a>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__meta">
+                <span>Productivity</span>
+                <span>LINE Bot</span>
+              </div>
+              <h3>研究室メンテナンス通知カレンダー</h3>
+              <p>
+                Google Apps Script、Google Calendar API、LINE APIを用いて、LC/MS/MS機器メンテナンスの担当日を前日に通知するBotを作成。
+                研究室メンバーの日常業務に継続利用されています。
+              </p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="experience" class="section section--tint" aria-labelledby="experience-title">
+        <div class="section__inner">
+          <div class="section-heading">
+            <p class="section-kicker">Experience</p>
+            <h2 id="experience-title">研究・開発経験</h2>
+          </div>
+
+          <div class="timeline">
+            <article class="timeline-item">
+              <p class="timeline-item__date">2025.8 - 2025.10</p>
+              <div>
+                <h3>中外製薬 インターンシップ</h3>
+                <p>
+                  タンパク質言語モデル・分子言語モデル・マルチモーダル基盤モデルを用いた創薬タスクを検証。
+                  実用性の限界を分析し、新たなアーキテクチャによる精度改善に取り組みました。
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <p class="timeline-item__date">2025.8 - 2025.9</p>
+              <div>
+                <h3>Preferred Networks 夏季インターン</h3>
+                <p>
+                  LLMを用いた遺伝子ネットワーク抽出に取り組み、文献知識から因果関係を推定する手法を設計・評価しました。
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <p class="timeline-item__date">2025.2 - 2025.3</p>
+              <div>
+                <h3>Advemto Ltd. インターン</h3>
+                <p>
+                  蛍光スペクトルの2次元Tensorデータから蛍光ラベルを予測するモデルを構築。
+                  データ構造を保つ前処理を提案し、実装しました。
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <p class="timeline-item__date">2022.10 - 2025.3</p>
+              <div>
+                <h3>DMG森精機 / WALC 長期インターン</h3>
+                <p>
+                  医療画像セグメンテーション、健康診断データ分析、RAGチャットボット、SAMによる欠損検知、
+                  OR-Toolsによる日程最適化、YOLOによる安全行動モニタリングなどに取り組みました。
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <p class="timeline-item__date">2023.9 - 2024.3</p>
+              <div>
+                <h3>Strategy and Partner アルバイト</h3>
+                <p>
+                  OpenAI APIを用いたWebアプリ開発に参加。GoによるバックエンドAPI、Next.jsによるチャットUI、
+                  マークダウン表示、ストリーミング応答などを実装しました。
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="skills" class="section section--dark" aria-labelledby="skills-title">
+        <div class="section__inner skills-layout">
+          <div>
+            <p class="section-kicker">Skills</p>
+            <h2 id="skills-title">専門性</h2>
+            <p>
+              薬学・生命科学のドメイン理解を土台に、統計モデル、機械学習、Webアプリケーションまで横断して実装します。
+            </p>
+          </div>
+          <div class="skill-groups">
+            <section aria-labelledby="skill-programming">
+              <h3 id="skill-programming">Programming</h3>
+              <p>Python, TypeScript, Go, Git, Docker, Linux</p>
+            </section>
+            <section aria-labelledby="skill-ml">
+              <h3 id="skill-ml">Machine Learning</h3>
+              <p>PyTorch, Scikit-Learn, XGBoost, LightGBM, Transformers, YOLO, RAG</p>
+            </section>
+            <section aria-labelledby="skill-domain">
+              <h3 id="skill-domain">Domain</h3>
+              <p>Computational drug discovery, Proteomics, LC/MS/MS, Molecular / Protein language models</p>
+            </section>
+            <section aria-labelledby="skill-web">
+              <h3 id="skill-web">Web</h3>
+              <p>React, Next.js, Gin, Ruby on Rails, OpenAI API</p>
+            </section>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <p>&copy; 2026 Shunichi Ito</p>
+      <a href="#top">Back to top</a>
+    </footer>
+  </body>
+</html>
