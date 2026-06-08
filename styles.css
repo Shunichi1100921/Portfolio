@@ -449,7 +449,7 @@ p {
 .publication-list {
   display: grid;
   gap: 24px;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .pub-card {
@@ -529,6 +529,66 @@ p {
   letter-spacing: 0.02em;
 }
 
+/* Text-only card variant (no image) */
+.pub-card--text .pub-card__text-link {
+  display: block;
+  text-decoration: none;
+}
+
+.pub-card--text .pub-card__text-banner {
+  aspect-ratio: 3 / 1;
+  background: linear-gradient(135deg, var(--teal-deep) 0%, var(--teal) 60%, #14b8a6 100%);
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  justify-content: center;
+  overflow: hidden;
+  padding: 24px 22px;
+  position: relative;
+  transition: filter 0.2s ease;
+}
+
+.pub-card--text .pub-card__text-banner::before {
+  background: radial-gradient(ellipse at top right, rgba(255,255,255,0.12) 0%, transparent 65%);
+  content: "";
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+.pub-card--text .pub-card__text-link:hover .pub-card__text-banner {
+  filter: brightness(1.1);
+}
+
+.pub-card__conf-badge {
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 999px;
+  color: var(--white);
+  font-size: 0.72rem;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  padding: 4px 10px;
+  text-transform: uppercase;
+  width: fit-content;
+}
+
+.pub-card__text-title {
+  color: var(--white);
+  font-size: 0.88rem;
+  font-weight: 700;
+  line-height: 1.45;
+  margin: 0;
+}
+
+.pub-card__text-cta {
+  color: rgba(255, 255, 255, 0.82);
+  font-size: 0.78rem;
+  font-weight: 800;
+  margin-top: auto;
+}
+
 .site-footer {
   align-items: center;
   border-top: 1px solid var(--line);
@@ -580,12 +640,16 @@ p {
   }
 
   .intro__grid,
-  .skills-layout,
-  .publication-list {
+  .skills-layout {
     grid-template-columns: 1fr;
   }
 
-  .pub-card__image-link {
+  .publication-list {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .pub-card__image-link,
+  .pub-card--text .pub-card__text-banner {
     aspect-ratio: 16 / 5;
   }
 
@@ -624,7 +688,8 @@ p {
   }
 
   .project-grid,
-  .skill-groups {
+  .skill-groups,
+  .publication-list {
     grid-template-columns: 1fr;
   }
 
