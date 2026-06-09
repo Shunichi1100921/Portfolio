@@ -280,10 +280,9 @@ p {
 }
 
 .intro__grid {
-  align-items: start;
-  display: grid;
-  gap: 36px;
-  grid-template-columns: minmax(0, 1fr) minmax(320px, 0.8fr);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
 }
 
 .intro p:not(.section-kicker) {
@@ -293,7 +292,8 @@ p {
 }
 
 .stats {
-  display: grid;
+  display: flex;
+  flex-wrap: wrap;
   gap: 1px;
   margin: 0;
   overflow: hidden;
@@ -302,7 +302,8 @@ p {
 .stats div {
   background: var(--white);
   border-left: 4px solid var(--teal);
-  padding: 20px 22px;
+  flex: 0 0 calc(50% - 0.5px);
+  padding: 14px 16px;
 }
 
 .stats dt {
@@ -314,7 +315,7 @@ p {
 }
 
 .stats dd {
-  font-size: 1rem;
+  font-size: 0.92rem;
   font-weight: 800;
   margin: 0;
 }
@@ -639,7 +640,6 @@ p {
     padding-right: 20px;
   }
 
-  .intro__grid,
   .skills-layout {
     grid-template-columns: 1fr;
   }
