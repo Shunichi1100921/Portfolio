@@ -395,6 +395,17 @@ p {
   text-decoration: none;
 }
 
+.text-link-group {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 12px;
+  margin-top: auto;
+}
+
+.text-link-group .text-link {
+  margin-top: 0;
+}
+
 .timeline {
   border-top: 1px solid var(--line);
 }
@@ -691,6 +702,10 @@ p {
   .skill-groups,
   .publication-list {
     grid-template-columns: 1fr;
+  }
+
+  .stats div {
+    flex: 0 0 100%;
   }
 
   .project-card,
