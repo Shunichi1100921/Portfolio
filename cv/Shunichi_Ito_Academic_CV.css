@@ -1,0 +1,658 @@
+:root {
+  --ink: #17202b;
+  --muted: #536170;
+  --accent: #0b6670;
+  --accent-soft: #e8f1f1;
+  --rule: #b8c3c8;
+  --paper: #ffffff;
+  --canvas: #e8ecee;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  background: var(--canvas);
+  color: var(--ink);
+  font-family: "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+  font-size: 10.5pt;
+  line-height: 1.34;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+}
+
+.document {
+  display: grid;
+  gap: 18px;
+  justify-content: center;
+  padding: 24px 0;
+}
+
+.page {
+  position: relative;
+  width: 210mm;
+  height: 297mm;
+  overflow: hidden;
+  padding: 12.5mm 14mm 12mm;
+  background: var(--paper);
+  box-shadow: 0 10px 30px rgb(18 32 40 / 15%);
+}
+
+.cv-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: end;
+  gap: 18px;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 3.8mm;
+}
+
+h1 {
+  margin: 0;
+  color: #102f39;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 27pt;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1;
+  text-transform: uppercase;
+}
+
+.headline {
+  margin: 2.2mm 0 0;
+  color: var(--muted);
+  font-size: 9.6pt;
+  font-weight: 600;
+  letter-spacing: 0.015em;
+}
+
+.contact {
+  display: grid;
+  gap: 0.8mm;
+  margin: 0;
+  max-width: 86mm;
+  color: var(--muted);
+  font-size: 8.6pt;
+  font-style: normal;
+  line-height: 1.28;
+  text-align: right;
+}
+
+section {
+  margin-top: 3.8mm;
+}
+
+h2 {
+  display: flex;
+  align-items: center;
+  gap: 2.8mm;
+  margin: 0 0 2mm;
+  color: var(--accent);
+  font-size: 10.3pt;
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+h2::after {
+  height: 1px;
+  flex: 1;
+  background: var(--rule);
+  content: "";
+}
+
+h3,
+p {
+  margin: 0;
+}
+
+h3 {
+  font-size: 10.3pt;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.profile {
+  display: grid;
+  grid-template-columns: 34mm 1fr;
+  gap: 4mm;
+  padding: 0.8mm 0 1mm;
+  margin-top: 0;
+}
+
+.profile h2 {
+  display: block;
+  margin: 0;
+  line-height: 1.35;
+}
+
+.profile h2::after {
+  display: none;
+}
+
+.profile p {
+  font-size: 8.45pt;
+  line-height: 1.2;
+}
+
+.section-intro {
+  margin-bottom: 2.6mm;
+  color: #344652;
+  font-size: 8.9pt;
+  line-height: 1.34;
+}
+
+.entry + .entry {
+  margin-top: 2.6mm;
+}
+
+.compact-entry + .compact-entry {
+  margin-top: 2.2mm;
+}
+
+.entry-heading {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 5mm;
+  align-items: start;
+}
+
+.role {
+  margin-top: 0.5mm;
+  color: var(--muted);
+  font-size: 9pt;
+  font-weight: 600;
+}
+
+.date {
+  color: var(--muted);
+  font-size: 8.7pt;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.detail {
+  margin-top: 1.2mm;
+  color: var(--muted);
+  font-size: 9pt;
+  line-height: 1.35;
+}
+
+ul {
+  display: grid;
+  gap: 0.7mm;
+  margin: 1.1mm 0 0;
+  padding-left: 4.5mm;
+}
+
+li {
+  padding-left: 0.8mm;
+  font-size: 8.85pt;
+  line-height: 1.31;
+}
+
+li::marker {
+  color: var(--accent);
+}
+
+.output-item strong {
+  font-weight: 700;
+}
+
+.continuation-header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 2px solid var(--accent);
+  padding-bottom: 2.3mm;
+  color: #102f39;
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 10.5pt;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+}
+
+.page-two section:first-of-type {
+  margin-top: 3.8mm;
+}
+
+.output-item {
+  padding-left: 3mm;
+  border-left: 2px solid #91adb1;
+}
+
+.output-item + .output-item {
+  margin-top: 1.7mm;
+}
+
+.output-item p {
+  font-size: 8.6pt;
+  line-height: 1.32;
+}
+
+.project-output {
+  margin-top: 1.2mm;
+}
+
+.project-output p {
+  font-size: 8.15pt;
+  line-height: 1.27;
+}
+
+.output-label {
+  margin-right: 1.1mm;
+  color: #274c55;
+  font-size: 7.4pt;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1.65fr 1fr;
+  gap: 7mm;
+}
+
+.mini-entry + .mini-entry {
+  margin-top: 1.5mm;
+}
+
+.mini-entry p {
+  font-size: 8.7pt;
+  line-height: 1.3;
+}
+
+.mini-entry p + p {
+  color: var(--muted);
+}
+
+.skills-list {
+  display: grid;
+  gap: 0.9mm;
+  margin: 0;
+}
+
+.skills-list > div {
+  display: grid;
+  grid-template-columns: 39mm 1fr;
+  gap: 3mm;
+}
+
+.skills-list dt {
+  color: #243f48;
+  font-size: 8.55pt;
+  font-weight: 700;
+}
+
+.skills-list dd {
+  margin: 0;
+  font-size: 8.55pt;
+  line-height: 1.3;
+}
+
+.references-section {
+  margin-top: 2.8mm;
+}
+
+.reference-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 7mm;
+}
+
+.reference-item p {
+  font-size: 8.2pt;
+  line-height: 1.26;
+}
+
+.reference-item p + p {
+  margin-top: 0.7mm;
+  color: var(--muted);
+}
+
+.page-footer {
+  position: absolute;
+  right: 14mm;
+  bottom: 5.5mm;
+  left: 14mm;
+  display: flex;
+  justify-content: space-between;
+  border-top: 1px solid var(--rule);
+  padding-top: 1.7mm;
+  color: #72808a;
+  font-size: 7.5pt;
+  letter-spacing: 0.03em;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  html,
+  body {
+    background: #fff;
+  }
+
+  .document {
+    display: block;
+    padding: 0;
+  }
+
+  .page {
+    margin: 0;
+    box-shadow: none;
+    break-after: page;
+  }
+
+  .page:last-child {
+    break-after: auto;
+  }
+}
+
+@media screen and (max-width: 860px) {
+  .document {
+    justify-content: start;
+    padding: 0;
+  }
+
+  .page {
+    transform-origin: top left;
+  }
+}
+
+/* Continuous single-column layout with an 11pt minimum text size. */
+html {
+  font-size: 11pt;
+  line-height: 1.2;
+}
+
+.document {
+  display: block;
+  width: 210mm;
+  margin: 0 auto;
+  padding: 24px 0;
+}
+
+.page {
+  width: 210mm;
+  height: auto;
+  min-height: 0;
+  overflow: visible;
+  padding: 11mm 13mm 12mm;
+}
+
+.cv-header {
+  gap: 16px;
+  padding-bottom: 3mm;
+}
+
+h1 {
+  font-size: 28pt;
+}
+
+.headline {
+  margin-top: 1.8mm;
+  font-size: 12pt;
+}
+
+.contact {
+  gap: 0.55mm;
+  font-size: 11pt;
+  line-height: 1.18;
+}
+
+section {
+  margin-top: 3mm;
+}
+
+h2 {
+  gap: 2.5mm;
+  margin-bottom: 1.6mm;
+  font-size: 12.5pt;
+}
+
+h3 {
+  font-size: 12pt;
+  line-height: 1.16;
+}
+
+.profile {
+  grid-template-columns: 32mm 1fr;
+  gap: 3.5mm;
+  padding: 0.6mm 0 0.8mm;
+}
+
+.profile p,
+.section-intro,
+.role,
+.date,
+.detail,
+li,
+.output-item p,
+.project-output p,
+.output-label,
+.mini-entry p,
+.skills-list dt,
+.skills-list dd,
+.reference-item p,
+.page-footer {
+  font-size: 11pt;
+}
+
+.profile p,
+.section-intro,
+.detail,
+li,
+.output-item p,
+.mini-entry p,
+.skills-list dt,
+.skills-list dd,
+.reference-item p {
+  line-height: 1.2;
+}
+
+.section-intro {
+  margin-bottom: 2mm;
+}
+
+.entry + .entry {
+  margin-top: 3mm;
+}
+
+.compact-entry + .compact-entry {
+  margin-top: 1.6mm;
+}
+
+.entry-heading {
+  gap: 4mm;
+  break-after: avoid-page;
+}
+
+.role {
+  margin-top: 0.35mm;
+}
+
+.detail {
+  margin-top: 0.8mm;
+}
+
+ul {
+  gap: 0.65mm;
+  margin-top: 1mm;
+  padding-left: 4.6mm;
+}
+
+li {
+  padding-left: 0.55mm;
+  break-inside: avoid;
+}
+
+.project-output {
+  margin-top: 1mm;
+  break-inside: avoid;
+}
+
+.project-output p {
+  overflow-wrap: anywhere;
+}
+
+.output-label {
+  margin-right: 0.8mm;
+}
+
+.two-column {
+  gap: 6mm;
+}
+
+.mini-entry + .mini-entry {
+  margin-top: 1mm;
+}
+
+.skills-list {
+  gap: 0.6mm;
+}
+
+.skills-list > div {
+  grid-template-columns: 43mm 1fr;
+  gap: 2.5mm;
+}
+
+.references-section {
+  margin-top: 2.4mm;
+}
+
+.reference-grid {
+  gap: 6mm;
+}
+
+.reference-item p + p {
+  margin-top: 0.5mm;
+}
+
+.page-footer {
+  position: static;
+  margin-top: 4mm;
+  padding-top: 1.4mm;
+}
+
+h2,
+h3,
+.two-column,
+.skills-list > div,
+.reference-grid {
+  break-inside: avoid;
+}
+
+@page {
+  size: A4;
+  margin: 11mm 13mm 12mm;
+}
+
+@media print {
+  .document {
+    width: auto;
+    margin: 0;
+    padding: 0;
+  }
+
+  .page {
+    width: auto;
+    height: auto;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    overflow: visible;
+    box-shadow: none;
+    break-after: auto;
+  }
+}
+
+/* Compact flow; publication and supporting sections follow the earlier CV. */
+.profile {
+  display: block;
+  margin-top: 2mm;
+}
+.profile h2 { margin-bottom: 1.4mm; }
+.profile p { line-height: 1.22; }
+section { margin-top: 2.4mm; }
+.entry + .entry { margin-top: 2.4mm; }
+li, .detail, .output-item p, .skills-list dd, .reference-item p {
+  line-height: 1.22;
+}
+ul { gap: 0.5mm; }
+.project-output + .project-output { margin-top: 1.5mm; }
+.skills-list > div { grid-template-columns: 43mm 1fr; }
+@page { size: A4; margin: 10mm 11mm; }
+@media print { h2 { break-after: avoid-page; } }
+/* Supporting material uses the compact hierarchy of the reference version. */
+#publication-heading ~ .project-output p,
+.two-column .mini-entry p,
+.skills-list dt, .skills-list dd,
+.reference-item p, .page-footer {
+  font-size: 10pt;
+  line-height: 1.22;
+}
+.two-column { grid-template-columns: 1.9fr 1fr; gap: 5mm; }
+.skills-list > div { grid-template-columns: 39mm 1fr; }
+@media print {
+  .references-section { margin-top: 2mm; }
+  .page-footer { margin-top: 2mm; }
+}
+
+/* Keep institution and role together across page breaks. */
+.entry-heading { break-inside: avoid-page; }
+@media print {
+  .page-footer { display: none; }
+}
+
+/* Web version: fit narrow screens without horizontal scrolling. */
+@media screen and (max-width: 860px) {
+  .document {
+    width: auto;
+    padding: 0;
+  }
+
+  .page {
+    width: auto;
+    padding: 20px 16px;
+    box-shadow: none;
+  }
+
+  .cv-header,
+  .entry-heading,
+  .two-column,
+  .skills-list > div {
+    grid-template-columns: 1fr;
+  }
+
+  .entry-heading {
+    gap: 0.5mm;
+  }
+
+  .contact {
+    max-width: none;
+    text-align: left;
+  }
+
+  .date {
+    white-space: normal;
+  }
+}

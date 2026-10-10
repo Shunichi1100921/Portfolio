@@ -1,0 +1,227 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Academic CV of Shunichi Ito for doctoral research opportunities in computer-assisted drug design.">
+    <title>Shunichi Ito - Academic CV</title>
+    <link rel="icon" href="../assets/hero-research.png">
+    <link rel="stylesheet" href="Shunichi_Ito_Academic_CV.css">
+  </head>
+  <body>
+    <main class="document" aria-label="Academic curriculum vitae">
+      <article class="page page-one continuous-page">
+        <header class="cv-header">
+          <div>
+            <h1>Shunichi Ito</h1>
+            <p class="headline">M.S. Candidate in Pharmaceutical Sciences</p>
+          </div>
+          <address class="contact">
+            <a href="mailto:ito.shunichi.24n@st.kyoto-u.ac.jp">ito.shunichi.24n@st.kyoto-u.ac.jp</a>
+            <a href="../en.html">Portfolio</a>
+          </address>
+        </header>
+
+        <section class="profile" aria-labelledby="profile-heading">
+          <h2 id="profile-heading">Research profile</h2>
+          <p>Master’s student at the Graduate School of Pharmaceutical Sciences, Kyoto University, developing computational models for proteomics and drug discovery. Began research in a predominantly experimental laboratory with limited prior knowledge of statistics and proteomics, building the necessary expertise through self-directed study. Integrated this knowledge into physically grounded generative model formulations, designed an evaluation framework, and implemented scalable models with GPU acceleration. Validated these models on real experimental data, establishing a new analytical approach to modeling the generation of LC–MS data from biological samples. Also applied statistical and machine learning methods to protein–ligand binding affinity prediction. Drew on pharmaceutical and statistical knowledge to evaluate model performance and analyze model behavior, and combined domain insights with machine learning methods to propose and implement new models. Proposed evaluation criteria and models better aligned with practical drug discovery needs. Particularly interested in learning latent molecular properties from experimental measurements, sequences, and structures to advance drug discovery.</p>
+        </section>
+
+        <section aria-labelledby="education-heading">
+          <h2 id="education-heading">Education</h2>
+
+          <div class="entry compact-entry">
+            <div class="entry-heading">
+              <div>
+                <h3>Kyoto University</h3>
+                <p class="role">M.S. in Pharmaceutical Sciences</p>
+              </div>
+              <p class="date">Apr 2025 - Mar 2027 (expected)</p>
+            </div>
+            <p class="detail">
+              Graduate School of Pharmaceutical Sciences · Research in computational proteomics and
+              statistical signal analysis for LC-MS/MS data<br>
+              Supervisor: Prof. Yasushi Ishihama · Collaborating supervisor: Prof. Kazuyoshi Yoshii
+            </p>
+          </div>
+
+          <div class="entry compact-entry">
+            <div class="entry-heading">
+              <div>
+                <h3>Kyoto University</h3>
+                <p class="role">B.S. in Pharmaceutical Sciences</p>
+              </div>
+              <p class="date">Apr 2020 - Mar 2025</p>
+            </div>
+          </div>
+        </section>
+
+        <section aria-labelledby="research-experience-heading">
+          <h2 id="research-experience-heading">Research Experience</h2>
+
+          <div class="entry">
+            <div class="entry-heading">
+              <div>
+                <h3>Kyoto University</h3>
+                <p class="role">Hierarchical Probabilistic Modeling for LC-MS/MS Proteomics</p>
+              </div>
+              <p class="date">Apr 2024 - Present</p>
+            </div>
+            <ul>
+              <li>Developed a novel approach to peptide and protein identification and quantification using posterior inference in a hierarchical mixture-of-mixtures model grounded in the physical processes underlying LC-MS data generation, through the model formulation, objective function, and prior distributions. Implemented the model in PyTorch, exploiting data sparsity and GPU acceleration for efficient computation, and validated it on experimental LC-MS data.</li>
+              <li>Demonstrated that this unified generative framework could identify and quantify additional peptides while maintaining agreement with established pipelines for shared identifications and quantitative trends, providing a proof of concept for modeling LC-MS data directly from its underlying physical processes.</li>
+            </ul>
+          </div>
+
+          <div class="entry">
+            <div class="entry-heading">
+              <div>
+                <h3>Chugai Pharmaceutical Co., Ltd.</h3>
+                <p class="role">Research Intern · Multimodal Learning for Protein-Ligand Binding Affinity Prediction</p>
+              </div>
+              <p class="date">Aug 2025 - Oct 2025</p>
+            </div>
+            <ul>
+              <li>Evaluated multimodal foundation model MAMMAL on protein-ligand binding affinity prediction using a protein-family-level out-of-distribution evaluation motivated by the imbalance in protein family representation in the dataset, which revealed that, despite strong overall performance, MAMMAL exhibited a negative correlation between predicted and measured affinities for unseen protein families, highlighting a substantial limitation in its ability to generalize to new targets.</li>
+              <li>Proposed a model that integrates pretrained ESM-2 and ChemBERTa through cross-attention to capture local interactions between amino acid residues and ligand atoms. With approximately one-quarter of the parameters of MAMMAL, the model achieved comparable overall predictive performance while demonstrating more robust generalization to unseen protein families.</li>
+            </ul>
+          </div>
+
+          <div class="entry">
+            <div class="entry-heading">
+              <div>
+                <h3>Kyoto University iCeMS · Packwood Group</h3>
+                <p class="role">Research Assistant · In Silico Candidate Molecule Design</p>
+              </div>
+              <p class="date">Jun 2022 - Mar 2023</p>
+            </div>
+            <ul>
+              <li>Used machine learning to predict compounds that induce cardiomyocyte differentiation from human induced pluripotent stem (iPS) cells, addressing the need for molecular environments that reliably direct differentiation toward a desired cell type.</li>
+              <li>Designed candidate molecules in silico by decomposing known inducing compounds into medicinal-chemistry-informed fragments and recombining them. Experimental follow-up confirmed that a designed compound induced cardiomyocyte differentiation, leading to a peer-reviewed publication.</li>
+            </ul>
+          </div>
+
+          <div class="entry">
+            <div class="entry-heading">
+              <div>
+                <h3>Preferred Networks, Inc.</h3>
+                <p class="role">Research Intern · Causal Gene-Network Inference with LLMs</p>
+              </div>
+              <p class="date">Aug 2025 - Sep 2025</p>
+            </div>
+            <ul>
+              <li>Investigated whether biological knowledge encoded in LLMs could support gene-network reconstruction, motivated by the importance of these networks for understanding disease mechanisms and identifying drug targets, and by the high cost of expert manual curation underlying major databases such as KEGG.</li>
+              <li>On a 19-gene breast-cancer KEGG pathway, a pairwise GPT-5 Nano workflow outperformed conventional causal-discovery methods, suggesting that even the smallest GPT-5 model encodes biological knowledge useful for gene-network reconstruction.</li>
+            </ul>
+          </div>
+
+          <div class="entry">
+            <div class="entry-heading">
+              <div>
+                <h3>Advemto Ltd. · iCeMS-MacDiarmid Institute On-Site Lab</h3>
+                <p class="role">Research Intern · Machine Learning for Spectroscopy</p>
+              </div>
+              <p class="date">Feb 2025 - Mar 2025</p>
+            </div>
+            <ul>
+              <li>Served as the company’s first dedicated data scientist during an on-site research internship in Wellington, New Zealand. Independently proposed the preprocessing and built models to identify fluorescent labels from two-dimensional spectral measurements and visualize label-specific features.</li>
+            </ul>
+          </div>
+
+          <div class="entry">
+            <div class="entry-heading">
+              <div>
+                <h3>WALC Inc. · DMG MORI Group</h3>
+                <p class="role">Data Science Intern</p>
+              </div>
+              <p class="date">Oct 2022 - Mar 2025</p>
+            </div>
+            <ul>
+              <li>
+                Built Python modeling, preprocessing, and evaluation pipelines for medical-image
+                segmentation, interpretable health-risk prediction, computer vision, and optimization.
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <section aria-labelledby="publication-heading">
+          <h2 id="publication-heading">Publication &amp; Conference Presentation</h2>
+          <div class="output-item project-output">
+            <p>
+              Etezadi, F.; <strong>Ito, S.</strong>; Yasui, K.; Abdalkader, R. K.; Minami, I.; Uesugi, M.;
+              Pandian, N. G.; Nakano, H.; Nakano, A.; Packwood, D. M. “Molecular Design for Cardiac Cell
+              Differentiation Using a Small Data Set and Decorated Shape Features.”
+              <em>J. Chem. Inf. Model.</em> <strong>2024</strong>, 64 (23), 8824-8837.
+              <a href="https://doi.org/10.1021/acs.jcim.4c01353">doi:10.1021/acs.jcim.4c01353</a>
+            </p>
+          </div>
+          <div class="output-item project-output">
+            <p>
+              <strong>Ito, S.</strong>; Arakawa, A.; Mizutani, K. “Assessing Out-of-Distribution
+              Generalization of Multimodal Foundation Models for Drug Discovery on Novel Protein
+              Families.” Poster, JSAI 2026, Jun 2026. Session 1Yin-A-29.
+              <a href="https://doi.org/10.11517/pjsai.JSAI2026.0_1YinA29">doi:10.11517/pjsai.JSAI2026.0_1YinA29</a>
+            </p>
+          </div>
+          <div class="output-item project-output">
+            <p>
+              <strong>Ito, S.</strong> “Extracting Gene Networks with LLMs: Pairwise Causal Inference and
+              Prompt Design.” Preferred Networks Tech Blog, Oct 2025. Article:
+              <a href="https://tech.preferred.jp/ja/blog/gene_network_extraction_with_llms/">https://tech.preferred.jp/ja/blog/gene_network_extraction_with_llms/</a>
+            </p>
+          </div>
+        </section>
+
+        <div class="two-column">
+          <section aria-labelledby="awards-heading">
+            <h2 id="awards-heading">Honors &amp; Certification</h2>
+            <div class="mini-entry">
+              <p><strong>Kaggle Silver Medal</strong></p>
+              <p>CIBMTR Equity in Post-HCT Survival Predictions · 20th place, 2025</p>
+            </div>
+            <div class="mini-entry">
+              <p><strong>Japan Statistical Society Certificate</strong></p>
+              <p>Grade 2, 2025</p>
+            </div>
+          </section>
+
+          <section aria-labelledby="languages-heading">
+            <h2 id="languages-heading">Languages</h2>
+            <div class="mini-entry">
+              <p><strong>Japanese</strong> · Native</p>
+              <p><strong>English</strong> · IELTS 6.5</p>
+            </div>
+          </section>
+        </div>
+
+        <section aria-labelledby="skills-heading">
+          <h2 id="skills-heading">Technical skills</h2>
+          <dl class="skills-list">
+            <div>
+              <dt>Programming</dt>
+              <dd>Python; working knowledge of TypeScript and Go</dd>
+            </div>
+            <div>
+              <dt>Machine learning</dt>
+              <dd>PyTorch, scikit-learn, Transformers, XGBoost, LightGBM; representation learning, causal discovery, survival modeling</dd>
+            </div>
+            <div>
+              <dt>Computational life science</dt>
+              <dd>Protein and molecular language models, protein-compound binding-affinity prediction, molecular representation, proteomics, LC-MS/MS</dd>
+            </div>
+            <div>
+              <dt>Statistical &amp; research computing</dt>
+              <dd>Expectation-Maximization Algorithm, Optimal Transport, Mixture-of-Mixtures Model, Variational Bayes</dd>
+            </div>
+          </dl>
+        </section>
+
+        <footer class="page-footer">
+          <span>Shunichi Ito · Academic CV</span>
+          <a href="../en.html">← Back to portfolio</a>
+        </footer>
+      </article>
+    </main>
+  </body>
+</html>

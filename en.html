@@ -21,6 +21,7 @@
         <a href="#projects">Projects</a>
         <a href="#experience">Experience</a>
         <a href="#skills">Skills</a>
+        <a href="cv/">CV</a>
         <a class="lang-switch" href="ja.html" aria-label="日本語版へ切り替え">JA</a>
       </nav>
     </header>
@@ -30,14 +31,15 @@
         <div class="hero__media" aria-hidden="true"></div>
         <div class="hero__overlay"></div>
         <div class="hero__content">
-          <p class="eyebrow">Computational biology / Machine learning / Web development</p>
+          <p class="eyebrow">AI for drug discovery / Computational proteomics / Machine learning</p>
           <h1 id="hero-title">Shunichi Ito</h1>
           <p class="hero__lead">
-            M.S. student at Graduate School of Pharmaceutical Sciences, Kyoto University.<br>
-            Passionate about revolutionizing drug discovery through life science × data science.
+            M.S. candidate at the Graduate School of Pharmaceutical Sciences, Kyoto University.<br>
+            Developing computational models for proteomics and drug discovery.
           </p>
           <div class="hero__actions" aria-label="Quick links">
             <a class="button button--primary" href="#projects">Projects</a>
+            <a class="button button--ghost" href="cv/">Academic CV</a>
           </div>
           <ul class="social-links" aria-label="Social links">
             <li>
@@ -90,17 +92,23 @@
             <p class="section-kicker">Profile</p>
             <h2>Shunichi Ito</h2>
             <p>
-              M.S. student in Pharmaceutical Sciences at Kyoto University. Affiliated with the Biomolecular Measurement Laboratory, developing novel LC/MS data analysis methods using statistical models.
+              M.S. candidate at the Graduate School of Pharmaceutical Sciences, Kyoto University, developing computational models for proteomics and drug discovery.
+              I build physically grounded generative models of LC-MS data, implement them at scale with GPU acceleration, and validate them on real experimental data.
+              I have also applied statistical and machine learning methods to protein-ligand binding affinity prediction, proposing evaluation criteria and models better aligned with practical drug discovery needs.
+              I am particularly interested in learning latent molecular properties from experimental measurements, sequences, and structures to advance drug discovery.
+            </p>
+            <p>
+              <a class="text-link" href="cv/">View Academic CV</a>
             </p>
           </div>
           <dl class="stats" aria-label="Highlights">
             <div>
               <dt>Research Interests</dt>
-              <dd>Chemoinformatics · AI for Drug Discovery · Diffusion Models</dd>
+              <dd>Computer-assisted Drug Design · Molecular Representation Learning · Computational Proteomics</dd>
             </div>
             <div>
               <dt>Expertise</dt>
-              <dd>EM Algorithm · Optimal Transport · Protein &amp; Molecular LMs · Proteomics</dd>
+              <dd>EM Algorithm · Optimal Transport · Mixture-of-Mixtures Models · Variational Bayes · Protein &amp; Molecular LMs · LC-MS/MS</dd>
             </div>
             <div>
               <dt>Stack</dt>
@@ -108,11 +116,11 @@
             </div>
             <div>
               <dt>Achievement</dt>
-              <dd>Kaggle Silver Medal · 20th Place (CIBMTR 2025) · Japan Statistical Society Certificate Grade 2</dd>
+              <dd>Kaggle Silver Medal · 20th Place (CIBMTR 2025) · Japan Statistical Society Certificate Grade 2 (2025)</dd>
             </div>
             <div>
               <dt>Language</dt>
-              <dd>Japanese / English</dd>
+              <dd>Japanese (Native) / English (IELTS 6.5)</dd>
             </div>
             <div>
               <dt>Hobbies</dt>
@@ -130,22 +138,22 @@
           </div>
           <div class="publication-list">
             <article class="pub-card">
-              <a class="pub-card__image-link" href="https://pub.confit.atlas.jp/ja/event/jsai2026/presentation/1Yin-A-29" target="_blank" rel="noopener noreferrer" aria-label="View presentation: Assessing OOD Generalization of Multimodal Foundation Models for Drug Discovery">
+              <a class="pub-card__image-link" href="https://doi.org/10.11517/pjsai.JSAI2026.0_1YinA29" target="_blank" rel="noopener noreferrer" aria-label="View presentation: Assessing Out-of-Distribution Generalization of Multimodal Foundation Models for Drug Discovery">
                 <img class="pub-card__image" src="assets/jsai_poster.png" alt="Poster figure: Multimodal drug discovery model architecture fusing ESM2 and ChemBERTa via cross-attention" loading="lazy">
                 <span class="pub-card__overlay" aria-hidden="true">View presentation →</span>
               </a>
               <div class="pub-card__body">
-                <p class="pub-card__venue">40th Annual Conf. of JSAI, June 2026 &nbsp;·&nbsp; First author</p>
+                <p class="pub-card__venue">JSAI 2026 (Poster, 1Yin-A-29), June 2026 &nbsp;·&nbsp; First author</p>
                 <h3>Assessing Out-of-Distribution Generalization of Multimodal Foundation Models for Drug Discovery on Novel Protein Families</h3>
               </div>
             </article>
             <article class="pub-card">
-              <a class="pub-card__image-link" href="https://pubs.acs.org/doi/full/10.1021/acs.jcim.4c01353" target="_blank" rel="noopener noreferrer" aria-label="Read paper: Molecular Design for Cardiac Cell Differentiation">
+              <a class="pub-card__image-link" href="https://doi.org/10.1021/acs.jcim.4c01353" target="_blank" rel="noopener noreferrer" aria-label="Read paper: Molecular Design for Cardiac Cell Differentiation">
                 <img class="pub-card__image" src="assets/icems-cardiomyocite-hiPSC.gif" alt="Abstract figure: Computational design of cardiomyocyte differentiation-inducing compounds from hiPSCs" loading="lazy">
                 <span class="pub-card__overlay" aria-hidden="true">Read paper →</span>
               </a>
               <div class="pub-card__body">
-                <p class="pub-card__venue">Journal of Chemical Information and Modeling, 2024 &nbsp;·&nbsp; Co-author</p>
+                <p class="pub-card__venue"><em>J. Chem. Inf. Model.</em> 2024, 64 (23), 8824–8837 &nbsp;·&nbsp; Co-author</p>
                 <h3>Molecular Design for Cardiac Cell Differentiation Using a Small Data Set and Decorated Shape Features</h3>
               </div>
             </article>
@@ -155,8 +163,8 @@
                 <span class="pub-card__overlay" aria-hidden="true">Read article →</span>
               </a>
               <div class="pub-card__body">
-                <p class="pub-card__venue">Preferred Networks Tech Blog, 2025 &nbsp;·&nbsp; Summer Internship Output</p>
-                <h3>Gene Network Extraction with LLMs: Pairwise Causal Inference and Prompt Design Experiments</h3>
+                <p class="pub-card__venue">Preferred Networks Tech Blog, Oct 2025 &nbsp;·&nbsp; Author</p>
+                <h3>Extracting Gene Networks with LLMs: Pairwise Causal Inference and Prompt Design</h3>
               </div>
             </article>
           </div>
@@ -174,18 +182,21 @@
             <article class="project-card project-card--featured">
               <div class="project-card__meta">
                 <span>Research</span>
-                <span>2024 - Present</span>
+                <span>Apr 2024 - Present</span>
               </div>
-              <h3>LC/MS Data Analysis via Mixture-of-Mixtures Model Leveraging Sample Hierarchy</h3>
+              <h3>Hierarchical Probabilistic Modeling for LC-MS/MS Proteomics</h3>
               <p>
-                Developing an analysis tool that models complex LC/MS signal data as mixture distributions to identify and quantify proteins and peptides.
-                Proposed a Mixture-of-Mixtures model that exploits sample hierarchy, and implemented an optimization algorithm using optimal transport as the objective function.
+                Developing a novel approach to peptide and protein identification and quantification using posterior inference in a hierarchical mixture-of-mixtures model
+                grounded in the physical processes underlying LC-MS data generation, through the model formulation, objective function, and prior distributions.
+                Implemented the model in PyTorch, exploiting data sparsity and GPU acceleration, and validated it on experimental LC-MS data.
+                The unified generative framework identified and quantified additional peptides while agreeing with established pipelines on shared identifications and quantitative trends.
               </p>
               <div class="tag-list">
-                <span>Python</span>
-                <span>Statistical modeling</span>
+                <span>PyTorch</span>
+                <span>Probabilistic modeling</span>
                 <span>Proteomics</span>
                 <span>EM algorithm</span>
+                <span>Optimal transport</span>
               </div>
             </article>
 
@@ -194,13 +205,15 @@
                 <span>Internship</span>
                 <span>Chugai Pharmaceutical</span>
               </div>
-              <h3>Assessing OOD Generalization of Multimodal Foundation Models on Novel Proteins</h3>
+              <h3>Multimodal Learning for Protein-Ligand Binding Affinity Prediction</h3>
               <p>
-                Evaluated the practical utility of multimodal foundation models for drug discovery tasks.
-                Rigorously assessed out-of-distribution generalization to novel proteins from a practical standpoint, and proposed a new architecture that improves performance.
+                Evaluated the multimodal foundation model MAMMAL with a protein-family-level out-of-distribution split. Despite strong overall performance,
+                it showed a negative correlation between predicted and measured affinities for unseen protein families.
+                Proposed a model integrating pretrained ESM-2 and ChemBERTa via cross-attention, which matched MAMMAL's overall performance with about one-quarter of the parameters
+                and generalized more robustly to unseen protein families.
               </p>
               <div class="text-link-group">
-                <a class="text-link" href="https://pub.confit.atlas.jp/ja/event/jsai2026/presentation/1Yin-A-29">View presentation</a>
+                <a class="text-link" href="https://doi.org/10.11517/pjsai.JSAI2026.0_1YinA29">View presentation</a>
                 <a class="text-link" href="https://zenn.dev/shunichi1100921/articles/ebb2597664aa65">Read the article</a>
               </div>
             </article>
@@ -210,10 +223,10 @@
                 <span>Internship</span>
                 <span>PFN</span>
               </div>
-              <h3>Gene Network Extraction with LLMs</h3>
+              <h3>Causal Gene-Network Inference with LLMs</h3>
               <p>
-                Targeted 19 genes related to the breast cancer KEGG Pathway, performing pairwise directed-edge estimation with an LLM and integrating the results into a DAG.
-                Improved F1 through iterative prompt design, revealing the potential to reconstruct comprehensive networks leveraging literature knowledge.
+                Investigated whether biological knowledge encoded in LLMs can support gene-network reconstruction, as an alternative to costly expert curation behind databases such as KEGG.
+                On a 19-gene breast-cancer KEGG pathway, a pairwise GPT-5 Nano workflow outperformed conventional causal-discovery methods.
               </p>
               <a class="text-link" href="https://tech.preferred.jp/ja/blog/gene_network_extraction_with_llms/">Read the article</a>
             </article>
@@ -236,12 +249,13 @@
                 <span>Research</span>
                 <span>iCeMS / KyotoU</span>
               </div>
-              <h3>Computational Design of Cardiomyocyte Differentiation-Inducing Compounds from hiPSCs</h3>
+              <h3>In Silico Design of Cardiomyocyte Differentiation-Inducing Compounds from hiPSCs</h3>
               <p>
-                Participated as a part-time researcher at iCeMS, Kyoto University. Predicted differentiation-inducing compounds from limited data using ML.
-                Responsible for fragment decomposition, novel compound generation, and PDB file creation. Experimental validation confirmed cardiomyocyte differentiation; published in a peer-reviewed international journal.
+                Research Assistant in the Packwood Group, iCeMS. Used machine learning to predict compounds that induce cardiomyocyte differentiation from human iPS cells,
+                and designed candidate molecules by decomposing known inducers into medicinal-chemistry-informed fragments and recombining them.
+                Experimental follow-up confirmed that a designed compound induced cardiomyocyte differentiation, leading to a peer-reviewed publication.
               </p>
-              <a class="text-link" href="https://pubs.acs.org/doi/full/10.1021/acs.jcim.4c01353">Read the paper</a>
+              <a class="text-link" href="https://doi.org/10.1021/acs.jcim.4c01353">Read the paper</a>
             </article>
 
             <article class="project-card">
@@ -268,20 +282,12 @@
 
           <div class="timeline">
             <article class="timeline-item">
-              <p class="timeline-item__date">Apr 2024 – Present</p>
+              <p class="timeline-item__date">Apr 2025 – Mar 2027 (expected)</p>
               <div>
-                <h3>M.S. Course, Graduate School of Pharmaceutical Sciences, Kyoto University</h3>
+                <h3>M.S. in Pharmaceutical Sciences, Kyoto University</h3>
                 <p>
-                  Affiliated with the <a href="https://www.pharm.kyoto-u.ac.jp/seizai/">Biomolecular Measurement Laboratory</a>, working on developing analysis methods for proteomics LC/MS data using mixture distribution models.
-                </p>
-              </div>
-            </article>
-            <article class="timeline-item">
-              <p class="timeline-item__date">May 2026 – Present</p>
-              <div>
-                <h3>RUTILEA Inc. — Part-time</h3>
-                <p>
-                  Working on the development of LLM applications.
+                  Affiliated with the <a href="https://www.pharm.kyoto-u.ac.jp/seizai/">Biomolecular Measurement Laboratory</a> (Supervisor: Prof. Yasushi Ishihama; Collaborating supervisor: Prof. Kazuyoshi Yoshii).
+                  Research in computational proteomics and statistical signal analysis for LC-MS/MS data, which I have pursued since Apr 2024.
                 </p>
               </div>
             </article>
@@ -289,10 +295,10 @@
             <article class="timeline-item">
               <p class="timeline-item__date">Aug – Oct 2025</p>
               <div>
-                <h3>Chugai Pharmaceutical — Internship</h3>
+                <h3>Chugai Pharmaceutical — Research Intern</h3>
                 <p>
-                  Evaluated drug discovery tasks using protein language models, molecular language models, and multimodal foundation models.
-                  Analyzed practical limitations and developed a new architecture to improve predictive accuracy.
+                  Multimodal learning for protein-ligand binding affinity prediction. Revealed the limited generalization of MAMMAL to unseen protein families
+                  and proposed a lighter ESM-2 × ChemBERTa cross-attention model that generalized more robustly.
                 </p>
               </div>
             </article>
@@ -300,9 +306,9 @@
             <article class="timeline-item">
               <p class="timeline-item__date">Aug – Sep 2025</p>
               <div>
-                <h3>Preferred Networks — Summer Internship</h3>
+                <h3>Preferred Networks — Research Intern</h3>
                 <p>
-                  Worked on gene network extraction with LLMs, designing and evaluating a method to infer causal relationships from literature knowledge.
+                  Causal gene-network inference with LLMs. Designed and evaluated a pairwise workflow that outperformed conventional causal-discovery methods on a breast-cancer KEGG pathway.
                 </p>
               </div>
             </article>
@@ -310,10 +316,10 @@
             <article class="timeline-item">
               <p class="timeline-item__date">Feb – Mar 2025</p>
               <div>
-                <h3>Advemto Ltd. — Internship</h3>
+                <h3>Advemto Ltd. (iCeMS-MacDiarmid Institute On-Site Lab) — Research Intern</h3>
                 <p>
-                  Built a machine learning model to predict fluorescent labels from 2D tensor fluorescence spectrum data.
-                  Proposed and implemented a preprocessing approach that preserves 2D data structure.
+                  Served as the company's first dedicated data scientist during an on-site research internship in Wellington, New Zealand.
+                  Independently proposed the preprocessing and built models to identify fluorescent labels from two-dimensional spectral measurements and visualize label-specific features.
                 </p>
               </div>
             </article>
@@ -321,10 +327,20 @@
             <article class="timeline-item">
               <p class="timeline-item__date">Oct 2022 – Mar 2025</p>
               <div>
-                <h3>DMG Mori / WALC — Long-term Internship</h3>
+                <h3>WALC Inc. (DMG MORI Group) — Data Science Intern</h3>
                 <p>
-                  Worked on medical image segmentation, health checkup data analysis, RAG chatbot development, defect detection with SAM,
-                  schedule optimization with OR-Tools, and safety behavior monitoring with YOLO.
+                  Built Python modeling, preprocessing, and evaluation pipelines for medical-image segmentation, interpretable health-risk prediction,
+                  computer vision, and optimization — including defect detection with SAM, safety behavior monitoring with YOLO, schedule optimization with OR-Tools, and a RAG chatbot.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <p class="timeline-item__date">Apr 2020 – Mar 2025</p>
+              <div>
+                <h3>B.S. in Pharmaceutical Sciences, Kyoto University</h3>
+                <p>
+                  Started research on hierarchical probabilistic modeling for LC-MS/MS proteomics in Apr 2024.
                 </p>
               </div>
             </article>
@@ -336,6 +352,16 @@
                 <p>
                   Contributed to a web application built with the OpenAI API. Implemented backend APIs in Go and improved the chat UI in Next.js,
                   including Markdown rendering and streaming response delivery.
+                </p>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <p class="timeline-item__date">Jun 2022 – Mar 2023</p>
+              <div>
+                <h3>Kyoto University iCeMS, Packwood Group — Research Assistant</h3>
+                <p>
+                  In silico candidate molecule design for cardiomyocyte differentiation from human iPS cells, leading to a peer-reviewed publication in <em>J. Chem. Inf. Model.</em>
                 </p>
               </div>
             </article>
@@ -355,20 +381,20 @@
           </div>
           <div class="skill-groups">
             <section aria-labelledby="skill-programming">
-              <h3 id="skill-programming">Programming</h3>
-              <p>Python, TypeScript, Go, Git, Docker, Linux</p>
+              <h3 id="skill-programming">Programming &amp; Web</h3>
+              <p>Python; working knowledge of TypeScript and Go. Git, Docker, Linux, React, Next.js, Gin, Ruby on Rails, OpenAI API</p>
             </section>
             <section aria-labelledby="skill-ml">
               <h3 id="skill-ml">Machine Learning</h3>
-              <p>PyTorch, Scikit-Learn, XGBoost, LightGBM, Transformers, YOLO, RAG</p>
+              <p>PyTorch, scikit-learn, Transformers, XGBoost, LightGBM; representation learning, causal discovery, survival modeling</p>
+            </section>
+            <section aria-labelledby="skill-stats">
+              <h3 id="skill-stats">Statistical Modeling</h3>
+              <p>Expectation-Maximization algorithm, Optimal transport, Mixture-of-mixtures models, Variational Bayes</p>
             </section>
             <section aria-labelledby="skill-domain">
-              <h3 id="skill-domain">Domain</h3>
-              <p>Computational drug discovery, Proteomics, LC/MS/MS, Molecular / Protein language models</p>
-            </section>
-            <section aria-labelledby="skill-web">
-              <h3 id="skill-web">Web</h3>
-              <p>React, Next.js, Gin, Ruby on Rails, OpenAI API</p>
+              <h3 id="skill-domain">Computational Life Science</h3>
+              <p>Protein and molecular language models, protein-compound binding-affinity prediction, molecular representation, proteomics, LC-MS/MS</p>
             </section>
           </div>
         </div>
